@@ -1,5 +1,5 @@
 {
-  "name": "day-one-blueprint",
+  "name": "day-four-boilerplate",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -7,7 +7,10 @@
   "dependencies": {
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "react-scripts": "3.0.1"
+    "react-router-dom": "5.0.1",
+    "react-scripts": "3.0.1",
+    "styled-components": "4.3.2",
+    "styled-reset": "3.0.2"
   },
   "devDependencies": {
     "typescript": "3.3.3"
