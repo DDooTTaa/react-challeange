@@ -17,18 +17,21 @@ const List = styled.div`
   }
 `;
 
-const HeaderTop = () => (
-  <Header>
-    <List>
-      <Link to="/">PRICES</Link>
-    </List>
-    <List>
-      <Link to="/exchanges">EXCHANGES</Link>
-    </List>
-    <List>
-      <Link to="/coins">COINS</Link>
-    </List>
-  </Header>
+const HeaderTop = ({ location: { pathname } }) => (
+  <>
+    <GlobalStyles />
+    <Header>
+      <List selected={pathname === "/"}>
+        <Link to="/">PRICES</Link>
+      </List>
+      <List selected={pathname === "/exchanges"}>
+        <Link to="/exchanges">EXCHANGES</Link>
+      </List>
+      <List selected={pathname === "/coins"}>
+        <Link to="/coins">COINS</Link>
+      </List>
+    </Header>
+  </>
 );
 
 export default withRouter(HeaderTop);
